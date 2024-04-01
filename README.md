@@ -1,3 +1,5 @@
+***This is a work in progress and serves as a scaffoled for more complicated scripts. It hasn't been thoroughly tested for bugs***
+
 # mpileup2readcounts.R
 Rscript pipes stdout of `samtools mpileup` and returns a consolidated table to stdout
 
