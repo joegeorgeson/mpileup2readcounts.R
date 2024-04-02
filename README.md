@@ -40,7 +40,8 @@ while(length(line <- readLines(f,n=1)) > 0) {
 
 ## Notes
 * The reference fasta `-f` flag must be provided in `samtools mpileup`
-* There are no options, but code can be easily changed. R1='+' strand
+* There are no options, but code can be easily changed.
+* R1='forward' strand for strand-sensititve applications.
 * Depth is returned directly from `samtools mpileup` which counts deletions in depth
 * Indels are reported as `profile:count` and unique indels are separated by a pipe `|` 
 * In this v0.1(beta) all 'reverse' reads are converted to 'forward' reads. (a->A, c->C, etc)
