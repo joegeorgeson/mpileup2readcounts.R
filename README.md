@@ -6,9 +6,11 @@ Rscript pipes stdout of `samtools mpileup` and returns a consolidated table to s
 **Motivation**: To create an R-based pileup wrangler that is low in resource consumption.
 
 ## Usage
-```samtools mpileup [options] -f my.fa my.bam | Rscript mpileup2readcounts.R > my.table.txt```
+```samtools mpileup [options] -B -f my.fa my.bam | Rscript mpileup2readcounts.R > my.table.txt```
 
-Note: use of reference fasta is required
+Notes:
++ use of reference fasta is required
++ use of `-B` flag is strongly recommended because BAQ causes more problems then it solves
 
 ## Output
 Consolidated pileup table containing read starts, stops, and indels.
